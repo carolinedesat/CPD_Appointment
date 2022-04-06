@@ -22,7 +22,7 @@ app.on("ready", () => {
     webPreferences: {
       nodeIntegration: true
     },
-    title: "GP Appointments App"
+    title: "GP Appointments App, Student ID: 2020302, 2020331."
   });
   todayWindow.loadURL(`file://${__dirname}/today.html`);
   todayWindow.on("closed", () => {
