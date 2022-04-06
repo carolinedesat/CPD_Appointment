@@ -18,6 +18,10 @@
           numberParagraph.innerHTML = `Phone Number: ${appointment.number}`;
           const dateParagraph = document.createElement("p");
           dateParagraph.innerHTML = `Date: ${appointment.date}`;
+          const timeParagraph = document.createElement("p");
+          timeParagraph.innerHTML = `Time: ${appointment.time}`;
+          const symptomsParagraph = document.createElement("p");
+          symptomsParagraph.innerHTML = `Symptoms: ${appointment.symptoms}`;
 
           const doneParagraph = document.createElement("p");
           doneParagraph.innerHTML = `Done: ${appointment.done ? "Yes" : "No"}`;
@@ -26,6 +30,8 @@
           appointmentDiv.appendChild(nameParagraph);
           appointmentDiv.appendChild(numberParagraph);
           appointmentDiv.appendChild(dateParagraph);
+          appointmentDiv.appendChild(timeParagraph);
+          appointmentDiv.appendChild(symptomsParagraph);
           appointmentDiv.appendChild(doneParagraph);
           appointmentDiv.appendChild(hr);
 
